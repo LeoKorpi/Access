@@ -1,18 +1,19 @@
-import { ArticleCard } from "../components/learning/ArticleCard";
-import { wcagContent } from "../content/wcag";
+import Box from "@mui/material/Box";
 
 export default function Home() {
   return (
-    <>
-      <h1>Välkommen till tillgängligt.</h1>
+    <Box
+      component="article"
+      sx={{
+        flexGrow: 1,
+        p: 3,
+      }}
+    >
+      <h1>Welcome to Access.</h1>
       <p>
         Discover the essentials of web accessibility and learn how to create
         inclusive digital experiences
       </p>
-      <div>
-        <ArticleCard {...wcagContent.introduction} />
-        <ArticleCard {...wcagContent.principles} />
-      </div>
-    </>
+    </Box>
   );
 }

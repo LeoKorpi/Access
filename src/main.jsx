@@ -12,6 +12,13 @@ import Root, {
 } from "./routes/root";
 import "./index.css";
 import ErrorPage from "./pages/error-page";
+import WCAGGuidelines from "./pages/Learning/WCAGGuidelines";
+import Aria from "./pages/Learning/ARIA";
+import Keyboard from "./pages/Learning/Keyboard";
+import ScreenReaders from "./pages/Learning/ScreenReaders";
+import Colors from "./pages/Learning/Colors";
+import Text from "./pages/Learning/Text";
+import Home from "./pages/Home";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +30,13 @@ const router = createBrowserRouter(
       errorElement={<ErrorPage />}
     >
       <Route errorElement={<ErrorPage />}></Route>
+      <Route index element={<Home />}></Route>
+      <Route path="wcag-guidelines" element={<WCAGGuidelines />}></Route>
+      <Route path="aria" element={<Aria />}></Route>
+      <Route path="keyboard" element={<Keyboard />}></Route>
+      <Route path="screenreaders" element={<ScreenReaders />}></Route>
+      <Route path="colorblindness" element={<Colors />}></Route>
+      <Route path="text" element={<Text />}></Route>
     </Route>
   ),
   {
