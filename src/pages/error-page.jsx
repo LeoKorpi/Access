@@ -9,7 +9,14 @@ export default function ErrorPage() {
       <h1>Oops!</h1>
       <p>Sorry, an unexpected error has occured.</p>
       <p>
-        <em>{error.statusText || error.message}</em>
+        <em>
+          {"Code " +
+            error.status +
+            ", " +
+            error.statusText +
+            ", " +
+            error.data || error.message}
+        </em>
       </p>
     </section>
   );
