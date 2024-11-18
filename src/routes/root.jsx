@@ -3,7 +3,8 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import StarBorder from "@mui/icons-material/StarBorder";
 import { useMediaQuery } from "@mui/material";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import ListIcon from "@mui/icons-material/List";
 import Collapse from "@mui/material/Collapse";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -67,7 +68,7 @@ export default function Root() {
               sx={location.pathname === item.path ? activeStyle : {}}
             >
               <ListItemIcon>
-                <StarBorder /> {/* byta ut ikoner? hur f-n gör jag det */}
+                <StarBorder />
               </ListItemIcon>
               <ListItemText primary={item.primary} />
               {item.secondary ? (
@@ -123,7 +124,9 @@ export default function Root() {
     >
       {isMobile ? (
         <>
-          <Button onClick={toggleDrawer}>Open drawer</Button>
+          <IconButton onClick={toggleDrawer}>
+            <ListIcon />
+          </IconButton>
           <Drawer anchor={"bottom"} open={drawerState} onClose={toggleDrawer}>
             {navigationList}
           </Drawer>

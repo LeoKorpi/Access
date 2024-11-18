@@ -12,9 +12,9 @@ export default function ErrorPage() {
         <em>
           {"Code " +
             error.status +
-            ", " +
+            ": " +
             error.statusText +
-            ", " +
+            ". " +
             error.data || error.message}
         </em>
       </p>
