@@ -5,19 +5,19 @@ export const navHeadings = [
     secondary: [
       {
         primary: "1. Perceivable",
-        path: "/perceivable",
+        path: "wcag-guidelines/perceivable",
       },
       {
         primary: "2. Operable",
-        path: "/operable",
+        path: "wcag-guidelines/operable",
       },
       {
         primary: "3. Understandable",
-        path: "/understandable",
+        path: "wcag-guidelines/understandable",
       },
       {
         primary: "4. Robust",
-        path: "/robust",
+        path: "wcag-guidelines/robust",
       },
     ],
   },

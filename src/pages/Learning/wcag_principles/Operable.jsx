@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import { Breadcrumbs, Link, Typography } from "@mui/material";
 
-export default function WCAGGuidelines() {
+export default function Operable() {
   return (
     <Box
       component="article"
@@ -14,9 +14,12 @@ export default function WCAGGuidelines() {
         <Link underline="hover" color="inherit" href="/">
           Home
         </Link>
-        <Typography sx={{ color: "text.primary" }}>WCAG</Typography>
+        <Link underline="hover" color="inherit" href="/wcag-guidelines">
+          WCAG
+        </Link>
+        <Typography sx={{ color: "text.primary" }}>2. Operable</Typography>
       </Breadcrumbs>
-      <h1>This page is for the WCAG guidelines</h1>
+      <h1>This page is for operable</h1>
     </Box>
   );
 }

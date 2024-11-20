@@ -1,5 +1,5 @@
-import { Link } from "@mui/material";
 import Box from "@mui/material/Box";
+import { Breadcrumbs, Link, Typography } from "@mui/material";
 
 export default function ARIA() {
   /**
@@ -14,6 +14,12 @@ export default function ARIA() {
 
   return (
     <Box>
+      <Breadcrumbs aria-label="breadcrumb">
+        <Link underline="hover" color="inherit" href="/">
+          Home
+        </Link>
+        <Typography sx={{ color: "text.primary" }}>ARIA</Typography>
+      </Breadcrumbs>
       <h1>ARIA Roles and Attributes</h1>
       <p>
         ARIA is shorthand for{" "}

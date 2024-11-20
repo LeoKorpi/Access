@@ -19,6 +19,10 @@ import ScreenReaders from "./pages/Learning/ScreenReaders";
 import Colors from "./pages/Learning/Colors";
 import Text from "./pages/Learning/Text";
 import Home from "./pages/Home";
+import Perceivable from "./pages/Learning/wcag_principles/Perceivable";
+import Operable from "./pages/Learning/wcag_principles/Operable";
+import Understandable from "./pages/Learning/wcag_principles/Understandable";
+import Robust from "./pages/Learning/wcag_principles/Robust";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,14 +33,23 @@ const router = createBrowserRouter(
       // action={rootAction}
       errorElement={<ErrorPage />}
     >
-      <Route errorElement={<ErrorPage />}></Route>
-      <Route index element={<Home />}></Route>
-      <Route path="wcag-guidelines" element={<WCAGGuidelines />}></Route>
-      <Route path="aria" element={<Aria />}></Route>
-      <Route path="keyboard" element={<Keyboard />}></Route>
-      <Route path="screenreaders" element={<ScreenReaders />}></Route>
-      <Route path="colorblindness" element={<Colors />}></Route>
-      <Route path="text" element={<Text />}></Route>
+      <Route errorElement={<ErrorPage />} />
+      <Route index element={<Home />} />
+      <Route path="wcag-guidelines" element={<WCAGGuidelines />} />
+
+      <Route path="wcag-guidelines/perceivable" element={<Perceivable />} />
+      <Route path="wcag-guidelines/operable" element={<Operable />} />
+      <Route
+        path="wcag-guidelines/understandable"
+        element={<Understandable />}
+      />
+      <Route path="wcag-guidelines/robust" element={<Robust />} />
+
+      <Route path="aria" element={<Aria />} />
+      <Route path="keyboard" element={<Keyboard />} />
+      <Route path="screenreaders" element={<ScreenReaders />} />
+      <Route path="colorblindness" element={<Colors />} />
+      <Route path="text" element={<Text />} />
     </Route>
   ),
   {
