@@ -18,6 +18,11 @@ export default function ErrorPage() {
             error.data || error.message}
         </em>
       </p>
+      {(!error.data || error.message) && (
+        <p>
+          Check out the console for a better explanation of what went wrong.
+        </p>
+      )}
     </section>
   );
 }
