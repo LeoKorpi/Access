@@ -16,3 +16,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.text-bold {
+  font-weight: bold;
+}
+
+p,
+code,
+pre {
+  font-size: 110%;
+}
