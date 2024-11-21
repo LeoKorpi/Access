@@ -1,0 +1,222 @@
+{
+  "breadcrumb": [
+    { "label": "Home", "link": "/" },
+    { "label": "ARIA", "link": null }
+  ],
+  "sections": [
+    {
+      "heading": "h1",
+      "type": "section",
+      "title": "ARIA Roles and Attributes",
+      "content": [
+        "ARIA is shorthand for ",
+        {
+          "type": "span",
+          "className": "text-bold",
+          "text": "Accessible Rich Internet Applications"
+        },
+        ". It is a set of attributes that can be added to HTML-elements to make web content accessible to users who use assistive technologies (AT). Below we'll dive deeper into what ARIA is, when to, and when to not use it."
+      ]
+    },
+    {
+      "heading": "h2",
+      "type": "section",
+      "title": "What is ARIA?",
+      "content": [
+        "Thanks to ARIA we can give semantic descriptions to content which doesn't natively exist in HTML or is missing full browser support. Simply put, ARIA was created for users who cannot use a mouse and must rely on their keyboard when browsing the web. When accessibility issues cannot be resolved with native HTML, ARIA can be utilized to patch things up.",
+        "The formal name for ARIA is ",
+        {
+          "type": "span",
+          "className": "text-bold",
+          "text": " Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)"
+        },
+        ". It is a technical specification published by the World Wide Consortiom (W3C) and the current recommendation to follow is ",
+        {
+          "type": "a",
+          "href": "https://www.w3.org/TR/wai-aria/",
+          "target": "_blank",
+          "rel": "noopener",
+          "aria-label": "Read more about the current ARIA recommendations",
+          "text": "WAI-ARIA 1.2"
+        },
+        "."
+      ]
+    },
+    {
+      "heading": "h2",
+      "type": "section",
+      "title": "How can I use ARIA?",
+      "content": [
+        "There are three areas that ARIA can be used for: ",
+        {
+          "type": "span",
+          "className": "text-bold",
+          "text": "Roles, States and Properties"
+        },
+        "."
+      ]
+    },
+    {
+      "heading": "h3",
+      "type": "section-with-list",
+      "title": "Roles",
+      "listType": "unordered",
+      "content": [
+        "Roles are defined and described by their characteristics. These define the structural function of a role, such as what a role is, concepts behind it and what instances the role can or must contain. Some examples of this are: "
+      ],
+      "list": [
+        {
+          "title": "Document structure roles",
+          "description": "descriptions for content within a page. Users with AT (Assisstive Technology) use these roles to identify content while navigating through a page and provides context to what they're taking in. Examples include: ",
+          "examples": ["img", "heading", "list", "cell"]
+        },
+        {
+          "title": "Landmark roles",
+          "description": " Created for easier navigation by providing identifiable landmarks for sections of content within a page. A screen reader will for example announce the start and end of each landmark-role set on a page. Examples include: ",
+          "examples": ["main", "form", "search", "navigation"]
+        },
+        {
+          "title": "Widget roles",
+          "description": "When naturtal HTML can't define elements widget roles are used to give semantic meaning to user interfaces (UIs). These are in turn divided into standalone and composite widgets. "
+        }
+      ],
+      "nestedLists": [
+        {
+          "title": "Standalone Widgets",
+          "text": " are self contained, some examples are: ",
+          "examples": ["button", "checkbox", "menuitem", "tab"]
+        },
+        {
+          "title": "Composite Widgets",
+          "text": " act as containers for standalone widgets, for example: ",
+          "examples": ["menu", "radiogroup", "combobox", "tablist"]
+        }
+      ],
+      "paragraphAfter": {
+        "text": [
+          "The full documentation of Roles can be found ",
+          {
+            "type": "a",
+            "href": "https://www.w3.org/TR/wai-aria/#Properties",
+            "target": "_blank",
+            "rel": "noopener",
+            "aria-label": "Read mroe about ARIA roles",
+            "text": "here"
+          },
+          "."
+        ]
+      }
+    },
+    {
+      "heading": "h2",
+      "type": "section-with-list",
+      "title": "When should I not use ARIA?",
+      "listType": "ordered",
+      "content": [
+        "Good Question! ",
+        {
+          "type": "a",
+          "href": "https://www.w3.org/TR/using-aria/#NOTES",
+          "target": "_blank",
+          "rel": "noopener",
+          "aria-label": "Read more about the five rules of ARIA use",
+          "text": " W3C have five rules for AIRA use"
+        },
+        " which you should always abide by if possible. These are: "
+      ],
+      "list": [
+        {
+          "title": "Standalone Widgets",
+          "description": "Self-contained elements",
+          "examples": ["button", "radiogroup", "combobox", "tablist"]
+        }
+      ]
+    },
+    {
+      "heading": "h2",
+      "type": "section",
+      "title": "When should I use ARIA?",
+      "content": [
+        "Here are some examples of where ARIA can and should be used: "
+      ]
+    },
+    {
+      "heading": "h2",
+      "type": "section",
+      "title": "Lessons learned",
+      "content": [
+        "My best tips for developing with ARIA is to start early and test lots. By navigating with only your keyboard and using a screen reader (by utilizing an extension for your browser) you'll quickly notice how your text is read. This will give you insights to, for example, if you've missed wrapping an abbreviation in a ",
+        {
+          "type": "code",
+          "text": "(abbr)"
+        },
+        "tag and given it a aria-label, how lists are read with screen readers, that widgets are given roles and many more. Oftentimes these things can be missed by lighthouse reports, so ",
+        {
+          "type": "span",
+          "className": "text-bold",
+          "text": "don't forget to test manually!"
+        }
+      ]
+    },
+    {
+      "heading": "h2",
+      "type": "section",
+      "title": "Useful links",
+      "content": [
+        {
+          "list": "unordered",
+          "content": [
+            {
+              "type": "a",
+              "href": "https://www.lullabot.com/articles/what-heck-aria-beginners-guide-aria-accessibility",
+              "target": "_blank",
+              "rel": "noopener",
+              "aria-label": "A beginners guide to ARIA and how to use it",
+              "text": "A beginners guide to ARIA and how to use it"
+            },
+            {
+              "type": "a",
+              "href": "https://web.dev/articles/semantics-aria",
+              "target": "_blank",
+              "rel": "noopener",
+              "aria-label": "A short article explaining ARIA for developers",
+              "text": "A short article explaining ARIA for developers"
+            },
+            {
+              "type": "a",
+              "href": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques",
+              "target": "_blank",
+              "rel": "noopener",
+              "aria-label": "A list of implementable ARIA-techniques that can be applied to HTML elements",
+              "text": "A list of implementable ARIA-techniques that can be applied to HTML elements"
+            },
+            {
+              "type": "a",
+              "href": "https://accessibilityinsights.io/info-examples/web/",
+              "target": "_blank",
+              "rel": "noopener",
+              "aria-label": "A list of examples to increase accessibility for webpages",
+              "text": "A list of examples to increase accessibility for webpages"
+            },
+            {
+              "type": "a",
+              "href": "https://thepaciellogroup.github.io/AT-browser-tests/",
+              "target": "_blank",
+              "rel": "noopener",
+              "aria-label": "A collection of 130 HTML-elements that have been tested for accessibility",
+              "text": "A collection of 130 HTML-elements that have been tested for accessibility"
+            },
+            {
+              "type": "a",
+              "href": "https://uxdesign.cc/a-three-layered-approach-to-accessibility-design-b6894fa15fd1",
+              "target": "_blank",
+              "rel": "noopener",
+              "aria-label": "How you should think when designing a webpage with accessibility built into it",
+              "text": "Insights into how you should think when designing a webpage with accessibility built into it"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
