@@ -7,6 +7,7 @@ export default function Home() {
       sx={{
         flexGrow: 1,
         p: 3,
+        overflowY: "auto",
       }}
     >
       <h1>Welcome to Access.</h1>

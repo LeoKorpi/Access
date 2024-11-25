@@ -119,7 +119,9 @@ export default function Root() {
       component="main"
       sx={{
         display: "flex",
+        height: "100dvh",
         flexDirection: isMobile ? "column-reverse" : "row",
+        flexShrink: 0,
       }}
     >
       {isMobile ? (
@@ -135,9 +137,11 @@ export default function Root() {
         <Box
           component="aside"
           sx={{
-            maxWidth: 280,
-            minWidth: 210,
-            width: 1 / 3,
+            height: "100dvh",
+            position: "sticky",
+            top: 0,
+            overflowY: "auto",
+            width: 1 / 4,
             flexShrink: 0,
             borderRight: 1,
             borderColor: "divider",
@@ -152,6 +156,7 @@ export default function Root() {
         sx={{
           flexGrow: 1,
           p: 3,
+          overflowY: "auto",
         }}
       >
         <Outlet />
