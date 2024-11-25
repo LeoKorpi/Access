@@ -2,7 +2,7 @@ import { Breadcrumbs, Link, Typography } from "@mui/material";
 import content from "../../content/ariaContent.json";
 import Section from "../../components/layout/Section";
 
-export default function ARIA() {
+export default function Aria() {
   const renderBreadCrumbs = () => (
     <Breadcrumbs aria-label="breadcrumb">
       {content.breadcrumb.map((crumb, index) =>

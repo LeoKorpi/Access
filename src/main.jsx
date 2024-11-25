@@ -6,23 +6,20 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Root, {
-  action as rootAction,
-  loader as rootLoader,
-} from "./routes/root";
 import "./index.css";
 import ErrorPage from "./pages/error-page";
-import WCAGGuidelines from "./pages/Learning/WCAGGuidelines";
-import Aria from "./pages/Learning/ARIA";
+import Home from "./pages/Home";
+import Aria from "./pages/Learning/Aria";
+import Colors from "./pages/Learning/Colors";
 import Keyboard from "./pages/Learning/Keyboard";
 import ScreenReaders from "./pages/Learning/ScreenReaders";
-import Colors from "./pages/Learning/Colors";
 import Text from "./pages/Learning/Text";
-import Home from "./pages/Home";
-import Perceivable from "./pages/Learning/wcag_principles/Perceivable";
 import Operable from "./pages/Learning/wcag_principles/Operable";
-import Understandable from "./pages/Learning/wcag_principles/Understandable";
+import Perceivable from "./pages/Learning/wcag_principles/Perceivable";
 import Robust from "./pages/Learning/wcag_principles/Robust";
+import Understandable from "./pages/Learning/wcag_principles/Understandable";
+import WCAGGuidelines from "./pages/Learning/WCAGGuidelines";
+import Root from "./routes/root";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
