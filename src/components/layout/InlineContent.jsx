@@ -10,14 +10,21 @@ export default function InlineContent({ content }) {
         </span>
       );
     }
+    if (item.type === "formatted-text") {
+      return (
+        <code key={index} style={{ whiteSpace: "pre-wrap" }}>
+          {item.text}
+        </code>
+      );
+    }
     if (item.type === "a") {
       return (
         <a
           key={index}
           href={item.href}
-          target={item.target}
-          rel={item.rel}
-          aria-label={item.ariaLabel}
+          target={item.target || "_blank"}
+          rel={item.rel || "noopener"}
+          aria-label={item["aria-label"] || "undefined"}
         >
           {item.text}
         </a>
@@ -30,6 +37,10 @@ export default function InlineContent({ content }) {
         </abbr>
       );
     }
+    if (item.type === "code") {
+      return <code key={index}>{`<${item.text}>`}</code>;
+    }
+    if (item.type === "br") return <br key={index} />;
     return null;
   });
 }
