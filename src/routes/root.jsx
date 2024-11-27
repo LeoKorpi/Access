@@ -141,7 +141,7 @@ export default function Root() {
             position: "sticky",
             top: 0,
             overflowY: "auto",
-            width: 1 / 4,
+            width: 2 / 9,
             flexShrink: 0,
             borderRight: 1,
             borderColor: "divider",

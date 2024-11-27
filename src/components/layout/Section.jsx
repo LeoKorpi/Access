@@ -16,7 +16,11 @@ export default function Section({ section }) {
   } = section;
 
   return (
-    <Box>
+    <Box
+      sx={{
+        maxWidth: 6 / 7,
+      }}
+    >
       <Typography variant={heading}>{title}</Typography>
       <Typography variant="body1">
         <InlineContent content={content} />
