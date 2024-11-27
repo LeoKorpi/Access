@@ -2,8 +2,11 @@ import { Typography } from "@mui/material";
 import List from "./List";
 import InlineContent from "./InlineContent";
 import Box from "@mui/material/Box";
+import { useTheme } from "@mui/material";
 
 export default function Section({ section }) {
+  const theme = useTheme();
+
   const {
     heading,
     type,
@@ -19,6 +22,7 @@ export default function Section({ section }) {
     <Box
       sx={{
         maxWidth: 6 / 7,
+        backgroundColor: theme.palette.primary.main,
       }}
     >
       <Typography variant={heading}>{title}</Typography>
