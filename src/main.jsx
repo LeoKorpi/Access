@@ -3,14 +3,8 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import "./index.css";
 import router from "./utils/router.jsx";
-import { createTheme, ThemeProvider } from "@mui/material";
-
-const theme = createTheme({
-  palette: {
-    primary: { main: "#e3e3e3" },
-    secondary: { main: "#000" },
-  },
-});
+import theme from "./styles/Theme.js";
+import { ThemeProvider } from "@mui/material";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
