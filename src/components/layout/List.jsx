@@ -12,36 +12,39 @@ export default function List({
 
   return (
     <>
-      <ListTag>
-        {items.map((item, index) => (
-          <li key={index}>
-            {item.title && <strong>{item.title}</strong>}
-            {item.description && <span>{item.description}</span>}
-            {item.examples && (
-              <InlineContent
-                content={item.examples.map((example, exampleIndex) => {
-                  const isLast = exampleIndex === item.examples.length - 1;
-                  return isLast
-                    ? { type: "code", text: example, suffix: "." }
-                    : { type: "code", text: example, suffix: ", " };
-                })}
-              />
-            )}
-            {item.link && <InlineContent content={item.link} />}
-          </li>
-        ))}
-        {nestedLists && (
-          <ul>
-            {nestedLists.map((nested, nestedIndex) => (
-              <NestedList
-                key={nestedIndex}
-                title={nested.title}
-                text={nested.text}
-                examples={nested.examples}
-              />
-            ))}
-          </ul>
-        )}
+      <ListTag className="list">
+        {items.map((item, index) => {
+          const isLastItem = index === items.length - 1;
+          return (
+            <li key={index}>
+              {item.title && <strong>{item.title}</strong>}
+              {item.description && <span>{item.description}</span>}
+              {item.examples && (
+                <InlineContent
+                  content={item.examples.map((example, exampleIndex) => {
+                    const isLast = exampleIndex === item.examples.length - 1;
+                    return isLast
+                      ? { type: "code", text: example, suffix: "." }
+                      : { type: "code", text: example, suffix: ", " };
+                  })}
+                />
+              )}
+              {item.link && <InlineContent content={item.link} />}
+              {isLastItem && nestedLists && (
+                <ul>
+                  {nestedLists.map((nested, nestedIndex) => (
+                    <NestedList
+                      key={nestedIndex}
+                      title={nested.title}
+                      text={nested.text}
+                      examples={nested.examples}
+                    />
+                  ))}
+                </ul>
+              )}
+            </li>
+          );
+        })}
       </ListTag>
       {paragraphAfter && (
         <Typography variant="body1">
