@@ -4,7 +4,6 @@ import {
   Route,
 } from "react-router-dom";
 import ErrorPage from "../pages/error-page";
-
 import Home from "../pages/Home";
 import Aria from "../pages/Learning/ARIA";
 import Colors from "../pages/Learning/Colors";
