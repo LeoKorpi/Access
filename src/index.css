@@ -24,6 +24,10 @@ body {
   font-weight: bold;
 }
 
+.list {
+  margin: 0;
+}
+
 p,
 code,
 pre {

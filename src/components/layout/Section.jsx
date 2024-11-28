@@ -21,7 +21,6 @@ export default function Section({ section }) {
   return (
     <Box
       sx={{
-        maxWidth: 6 / 7,
         backgroundColor: theme.palette.primary.main,
       }}
     >
