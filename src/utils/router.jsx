@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import ErrorPage from "../pages/error-page";
 import Home from "../pages/Home";
-import Aria from "../pages/Learning/ARIA";
+import Aria from "../pages/Learning/Aria";
 import Colors from "../pages/Learning/Colors";
 import Keyboard from "../pages/Learning/Keyboard";
 import ScreenReaders from "../pages/Learning/ScreenReaders";

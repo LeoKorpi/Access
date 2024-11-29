@@ -11,7 +11,7 @@ import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { navHeadings } from "../content/nav_headings";
 
@@ -28,6 +28,7 @@ export default function Root() {
   const [drawerState, setDrawerState] = useState(false);
   const isMobile = useMediaQuery("(max-width:430px)"); //justera efter minsta önskade bredd på mobilupplösning
   const location = useLocation();
+  const pathName = location.pathname.slice(1); //slice för att ta bort'\' i början
 
   const handleClick = (index) => {
     setOpenStates((prevStates) => {
@@ -114,6 +115,12 @@ export default function Root() {
     </Box>
   );
 
+  useEffect(() => {
+    console.log(pathName);
+    const container = document.querySelector(".main-content");
+    container.scrollTo(0, 0);
+  }, [pathName]);
+
   return (
     <Box
       component="main"
@@ -153,6 +160,7 @@ export default function Root() {
 
       <Box
         component="section"
+        className="main-content"
         sx={{
           flexGrow: 1,
           p: 3,
