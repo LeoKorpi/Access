@@ -14,6 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { navHeadings } from "../content/nav_headings";
+import AccessibilityWidget from "../utils/AccessibilityWidget";
 
 // "writer", returns the url to be redirected to
 export async function action() {
@@ -169,6 +170,7 @@ export default function Root() {
         }}
       >
         <Outlet />
+        <AccessibilityWidget />
       </Box>
     </Box>
   );
