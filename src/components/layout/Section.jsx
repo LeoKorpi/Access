@@ -35,16 +35,18 @@ export default function Section({ section }) {
       >
         {title}
       </Typography>
-      <Typography
-        variant="body1"
-        sx={{
-          mb: theme.spacing("body1"),
-          letterSpacing: theme.letterSpacing("body1"),
-          wordSpacing: theme.wordSpacing("body1"),
-        }}
-      >
-        <InlineContent content={content} />
-      </Typography>
+      {type === "section" && (
+        <Typography
+          variant="body1"
+          sx={{
+            mb: theme.spacing("body1"),
+            letterSpacing: theme.letterSpacing("body1"),
+            wordSpacing: theme.wordSpacing("body1"),
+          }}
+        >
+          <InlineContent content={content} />
+        </Typography>
+      )}
       {type === "section-with-list" && (
         <List
           items={list}
