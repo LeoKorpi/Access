@@ -4,7 +4,7 @@ const baseFontSize = 16;
 
 let theme = createTheme({
   palette: {
-    primary: { main: "#e3e3e3" },
+    primary: { main: "#fff" },
     secondary: { main: "#000" },
   },
   typography: {
