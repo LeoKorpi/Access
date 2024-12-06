@@ -149,6 +149,7 @@ export default function Root() {
             top: 0,
             overflowY: "auto",
             width: 2 / 9,
+            minWidth: 210,
             flexShrink: 0,
             borderRight: 1,
             borderColor: "divider",
