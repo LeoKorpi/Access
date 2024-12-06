@@ -9,7 +9,7 @@ import Aria from "../pages/Learning/Aria";
 import Colors from "../pages/Learning/Colors";
 import Keyboard from "../pages/Learning/Keyboard";
 import ScreenReaders from "../pages/Learning/ScreenReaders";
-import Text from "../pages/Learning/Text";
+import Font from "../pages/Learning/Font";
 import Operable from "../pages/Learning/wcag_principles/Operable";
 import Perceivable from "../pages/Learning/wcag_principles/Perceivable";
 import Robust from "../pages/Learning/wcag_principles/Robust";
@@ -42,7 +42,7 @@ const router = createBrowserRouter(
       <Route path="keyboard" element={<Keyboard />} />
       <Route path="screenreaders" element={<ScreenReaders />} />
       <Route path="colorblindness" element={<Colors />} />
-      <Route path="text" element={<Text />} />
+      <Route path="font" element={<Font />} />
     </Route>
   ),
   {

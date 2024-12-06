@@ -25,5 +25,5 @@ export const navHeadings = [
   { primary: "Keyboard navigation", path: "/keyboard" },
   { primary: "Optimization for screen readers", path: "/screenreaders" },
   { primary: "Color blindness", path: "/colorblindness" },
-  { primary: "Fonts", path: "/text" },
+  { primary: "Fonts", path: "/font" },
 ];
