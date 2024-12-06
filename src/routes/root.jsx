@@ -51,7 +51,7 @@ export default function Root() {
 
   const navigationList = (
     <Box sx={{ width: "auto" }} role="presentation">
-      <List component="nav" aria-labelledby="nested-list-test">
+      <List component="nav" aria-label="nested-list-test">
         {navHeadings.map((item, index) => (
           <div key={index}>
             <ListItemButton
@@ -115,8 +115,8 @@ export default function Root() {
     </Box>
   );
 
+  //Makes the page scroll to the top when the section-component is reloaded (visiting new page)
   useEffect(() => {
-    console.log(pathName);
     const container = document.querySelector(".main-content");
     container.scrollTo(0, 0);
   }, [pathName]);

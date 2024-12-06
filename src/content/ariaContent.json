@@ -94,14 +94,13 @@
       ],
       "paragraphAfter": {
         "text": [
-          "The full documentation of Roles can be found ",
           {
             "type": "a",
             "href": "https://www.w3.org/TR/wai-aria/#Properties",
             "target": "_blank",
             "rel": "noopener",
-            "aria-label": "Read mroe about ARIA roles",
-            "text": "here"
+            "aria-label": "Read more about ARIA roles from the W3C documentation",
+            "text": "Read more about ARIA roles here"
           },
           "."
         ]
@@ -126,7 +125,7 @@
       ],
       "list": [
         {
-          "description": "If you can use a native HTML element with the semantics and behaviour you need already built in, then do so. Not all HTML5 elements have accessibility support yet, you can always check the current status of elements ",
+          "description": "If you can use a native HTML element with the semantics and behaviour you need already built in, then do so. Not all HTML5 elements have accessibility support yet, you can always ",
           "link": [
             {
               "type": "a",
@@ -134,7 +133,7 @@
               "target": "_blank",
               "rel": "noopener",
               "aria-label": "Read more about the accessibility support for HTML5 elements",
-              "text": " here."
+              "text": " check the current status of elements here."
             }
           ]
         },

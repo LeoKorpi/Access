@@ -18,7 +18,7 @@ export default function List({
           return (
             <li key={index}>
               {item.title && <strong>{item.title}</strong>}
-              {item.description && <span>{item.description}</span>}
+              {item.description && <span>{item.description} </span>}
               {item.examples && (
                 <InlineContent
                   content={item.examples.map((example, exampleIndex) => {
