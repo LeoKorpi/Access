@@ -9,257 +9,106 @@
       "type": "section",
       "title": "Keyboard Navigation",
       "content": [
-        "ARIA is shorthand for ",
-        {
-          "type": "span",
-          "className": "text-bold",
-          "text": "Accessible Rich Internet Applications"
-        },
-        ". It is a set of attributes that can be added to HTML-elements to make web content accessible to users who use assistive technologies (AT). Below we'll dive deeper into what ARIA is, when to, and when to not use it."
-      ]
-    },
-    {
-      "heading": "h2",
-      "type": "section",
-      "title": "What is ARIA?",
-      "content": [
-        "Thanks to ARIA we can give semantic descriptions to content which doesn't natively exist in HTML or is missing full browser support. Simply put, ARIA was created for users who cannot use a mouse and must rely on their keyboard when browsing the web. When accessibility issues cannot be resolved with native HTML, ARIA can be utilized to patch things up.",
-        "The formal name for ARIA is ",
-        {
-          "type": "span",
-          "className": "text-bold",
-          "text": " Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA)"
-        },
-        ". It is a technical specification published by the World Wide Consortiom (W3C) and the current recommendation to follow is ",
+        "Keyboard navigation, or 'Keyboard Accessible' as it is often referred to, means that all the functionalities of the digital content are operable through keyboard inputs alone. This is taken from principle 2.1 in WCAG which states that websites should strive to ",
         {
           "type": "a",
-          "href": "https://www.w3.org/TR/wai-aria/",
+          "href": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard-accessible",
           "target": "_blank",
           "rel": "noopener",
-          "aria-label": "Read more about the current ARIA recommendations",
-          "text": "WAI-ARIA 1.2"
+          "aria-label": "Read more about WCAG principle 2.1",
+          "text": "make all functionality available from a keyboard."
         },
-        "."
+        " This includes taking into consideration that all functionality of a keyboard can be accomplished by keyboard users, speech input (creating keyboard input), by mouse (using on screen keyboards) and other assistive technologies (AT) that create simulated keystrokes as their output. ",
+        "The user therefore has to be able to navigate through menus, activating buttons, clicking links, filling out forms and controlling media players without necessarily using a mouse."
       ]
     },
     {
       "heading": "h2",
-      "type": "section",
-      "title": "How can I use ARIA?",
-      "content": [
-        "There are three areas that ARIA can be used for: ",
-        {
-          "type": "span",
-          "className": "text-bold",
-          "text": "Roles, States and Properties"
-        },
-        "."
-      ]
-    },
-    {
-      "heading": "h3",
       "type": "section-with-list",
-      "title": "Roles",
+      "title": "What should the keyboard do?",
       "listType": "unordered",
       "content": [
-        "Roles are defined and described by their characteristics. These define the structural function of a role, such as what a role is, concepts behind it and what instances the role can or must contain. Some examples of this are: "
+        "There are four success criteria in the keyboard principle that must be met for the website to be considered keyboard accessible."
       ],
       "list": [
         {
-          "title": "Document structure roles",
-          "description": " give descriptions for content within a page. Users with AT (Assisstive Technology) use these roles to identify content while navigating through a page and provides context to what they're taking in. Examples include: ",
-          "examples": ["img", "heading", "list", "cell"]
+          "title": "2.1.1 Keyboard:",
+          "description": " Everything on the website can be done with with a keyboard except feehand movements. This will be ensured by making all pointer (mouse) actions have keyboard equivalents. We do this so that users who rely on keyboard usage can still navigate through our website."
         },
         {
-          "title": "Landmark roles",
-          "description": " were created for easier navigation by providing identifiable landmarks for sections of content within a page. A screen reader will for example announce the start and end of each landmark-role set on a page. Examples include: ",
-          "examples": ["main", "form", "search", "navigation"]
+          "title": "2.1.2 No Keyboard Trap:",
+          "description": " When navigating with the keyboard, users dont get stuck (e.g. caught in a loop cycling through menu options). We can accomplish this by ensuring that users can navigate away from components since some users have no other avaiable means of navigating."
         },
         {
-          "title": "Widget roles",
-          "description": " for when naturtal HTML can't define elements widget roles are used to give semantic meaning to user interfaces (UIs). These are in turn divided into standalone and composite widgets. "
-        }
-      ],
-      "nestedLists": [
-        {
-          "title": "Standalone Widgets",
-          "text": " are self contained, some examples are: ",
-          "examples": ["button", "checkbox", "menuitem", "tab"]
+          "title": "2.1.3 Keyboard (No exception):",
+          "description": " This is an extension of criterion 2.1.1, except in this case all of the content is operable from the keyboard. No exceptions. "
         },
         {
-          "title": "Composite Widgets",
-          "text": " act as containers for standalone widgets, for example: ",
-          "examples": ["menu", "radiogroup", "combobox", "tablist"]
+          "title": "2.1.4 Character Key Shortcuts:",
+          "description": " If a keyboard shortcut can be utilized using a single letter, punctuation, numbers or symbol charachter, then it must either be able to be turned off, remapped or to only activate when it has focus. "
         }
       ],
       "paragraphAfter": {
         "text": [
-          "The full documentation of Roles can be found ",
-          {
-            "type": "a",
-            "href": "https://www.w3.org/TR/wai-aria/#Properties",
-            "target": "_blank",
-            "rel": "noopener",
-            "aria-label": "Read mroe about ARIA roles",
-            "text": "here"
-          },
-          "."
+          "For users who has to rely on keyboards (due to possible disabilities, impairments, convenience or preference) keyboard accessibility is vital. It ensures that they have access and can use the services without major issues, promoting inclusivity in digital services. "
         ]
       }
     },
     {
       "heading": "h2",
       "type": "section-with-list",
-      "title": "When should I not use ARIA?",
-      "listType": "ordered",
+      "title": "Examples of keyboard accessibility",
       "content": [
-        "Good Question! ",
-        {
-          "type": "a",
-          "href": "https://www.w3.org/TR/using-aria/#NOTES",
-          "target": "_blank",
-          "rel": "noopener",
-          "aria-label": "Read more about the five rules of ARIA use",
-          "text": " W3C have five rules for AIRA use"
-        },
-        " which you should always abide by if possible. These are: "
+        "In addition to fulfilling the success-criteras of WCAG, we can also think about some practical examples of when a user would want to navigate using the keyboard. "
       ],
       "list": [
         {
-          "description": "If you can use a native HTML element with the semantics and behaviour you need already built in, then do so. Not all HTML5 elements have accessibility support yet, you can always check the current status of elements ",
-          "link": [
-            {
-              "type": "a",
-              "href": "https://www.html5accessibility.com/",
-              "target": "_blank",
-              "rel": "noopener",
-              "aria-label": "Read more about the accessibility support for HTML5 elements",
-              "text": " here."
-            }
-          ]
+          "title": "Navigating menus:",
+          "description": " Users should be able to navigate a dropdown menu on a webpage using the arrow-keys and the enter-key to selec items."
         },
         {
-          "description": "Do not change native semantics, unless you really have to. "
+          "title": "Interactive elements:",
+          "description": " It should be possible to focus on elements that can be interacted with (e.g. buttons, links and various form-fields) using the tab-key and utilize the enter-key to interact with them."
         },
         {
-          "description": "All interactive ARIA controls must be usable with the keyboard. "
-        },
-        {
-          "description": "Do not use role=\"presentation\" or aria-hidden=\"true\" on a focusable element."
-        },
-        {
-          "description": "All interactive elements must have an accessible name."
+          "title": "Media players:",
+          "description": " Media players on websites should be reachable and controlable via the keyboard. Some common usage of keyboard shortcuts for this can be to pause, play, mute, adjust volume, enable caption and many more."
         }
       ]
     },
     {
       "heading": "h2",
       "type": "section",
-      "title": "When should I use ARIA?",
+      "title": "What can I do as a developer?",
       "content": [
-        "Here are some examples of where ARIA can and should be used: "
-      ]
-    },
-    {
-      "heading": "h3",
-      "type": "section",
-      "title": "Descriptive labels",
-      "content": [
-        "When you need to add more descriptive labels to buttons or links, you can use ",
+        "As a developer it is your efforts that allows the web to become more accessible. When it comes to focusable elements alot of the functionality is already built into the standard HTML-elements such as ",
         {
           "type": "code",
-          "text": "aria-label"
+          "text": "button"
         },
-        "!",
-        { "type": "br" },
-        "Before: ",
+        ", ",
         {
           "type": "code",
-          "text": "a href=\"/you/path/here\">Read more</a"
+          "text": "a"
         },
-        { "type": "br" },
-        "After: ",
+        ", ",
         {
           "type": "code",
-          "text": "a aria-label=\"Read more about ARIA and how to use it\" href=\"/you/path/here\">Read more</a"
+          "text": "input"
         },
-        { "type": "br" },
-        "This attribute will allow ",
+        " and many more. Other elements can gain the ability to be focusable by using tab-index, but be careful to not overdo it or break the natural flow of the page.",
+        " A trick that has been getting more popular as more developers embrace WCAG is to ",
         {
-          "type": "abbr",
-          "aria-label": "Assistive Technology",
-          "title": "Assistive Technology",
-          "text": "AT"
+          "type": "a",
+          "href": "https://www.w3.org/TR/WCAG20-TECHS/G1.html",
+          "target": "_blank",
+          "rel": "noopener",
+          "aria-label": "Read the guide to meeting the 2.4.1 WCAG criteria.",
+          "text": " add a link at the top of every page which skips directly to the main-content."
         },
-        " to read the label for the link instead of the href-property for the link, making the element easier to grasp."
-      ]
-    },
-    {
-      "heading": "h3",
-      "type": "section",
-      "title": "Alerts",
-      "content": [
-        "In order for events to get announced to screen readers you must add ARIA roles to them.",
-        { "type": "br" },
-        "Before: ",
-        {
-          "type": "code",
-          "text": "div class=\"alert-message\">Error: Login not found.</div"
-        },
-        { "type": "br" },
-        "After: ",
-        {
-          "type": "code",
-          "text": "div class=\"alert-message\" role=\"alert\">Login Successful!</div"
-        }
-      ]
-    },
-    {
-      "heading": "h3",
-      "type": "section",
-      "title": "Relationships",
-      "content": [
-        "Sometimes you need to give elements ARIA attributes to create a relationship. The attributes should be given to each of the elements.",
-        { "type": "br" },
-        "For example, here all of the a-elements have roles that are related to the ul-element which is the parent.",
-        { "type": "br" },
-        {
-          "type": "formatted-text",
-          "text": "<ul id=\"nav-menu-list\"role=\"menu\">\n  <li role=\"none\">\n    <a role=\"menuitem\"href=\"...\">Link 1 </a>\n  </li>\n  <li role=\"none\">\n    <a role=\"menuitem\"href=\"...\">Link 2 </a>\n  </li>\n  <li role=\"none\">\n    <a role=\"menuitem\"href=\"...\">Link 3 </a>\n  </li>\n</ul>"
-        }
-      ]
-    },
-    {
-      "heading": "h3",
-      "type": "section",
-      "title": "Forms",
-      "content": [
-        "You can add ARIA Attributes to input-fields to make forms more accessible. This makes the fields easier to interact with.",
-        { "type": "br" },
-        "For example: ",
-        { "type": "br" },
-        {
-          "type": "formatted-text",
-          "text": "<label for=\"first-name\">First name</label>\n<input type=\"text\" id=\"first-name\" aria-required=\"true\" autocomplete=\"on\"/>"
-        }
-      ]
-    },
-    {
-      "heading": "h2",
-      "type": "section",
-      "title": "Lessons learned",
-      "content": [
-        "My best tips for developing with ARIA is to start early and test lots. By navigating with only your keyboard and using a screen reader (by utilizing an extension for your browser) you'll quickly notice how your text is read. This will give you insights to, for example, if you've missed wrapping an abbreviation in a ",
-        {
-          "type": "code",
-          "text": "abbr"
-        },
-        " tag and given it a aria-label, how lists are read with screen readers, that widgets are given roles and many more. Oftentimes these things can be missed by lighthouse reports, so ",
-        {
-          "type": "span",
-          "className": "text-bold",
-          "text": "don't forget to test manually!"
-        }
+        " This way users don't have to skim through all elements in the header before getting to the content they actually want to interact with. Navigating straight to the main content will save time, frustration and create a more accessible experience. ",
+        " Another important thing is to talk with the developers and designers in your team about accessibility. Ask yourselves how you would navigate the page if you could only use the keyboard. How would you wish to navigate a header containing a navbar, a menu, a section with links, a button and a search field. Which one should be the users highest priority? and what comes after?",
+        " All of this affects the user experience, nobody wants to repeatedly hit the tab-key to skip over content they're not interested in. Discuss with others or ask yourself about how navigating a webpage only using tab would look and feel like. Chances are you will learn something new and gain a new perspective."
       ]
     },
     {
@@ -273,11 +122,11 @@
           "link": [
             {
               "type": "a",
-              "href": "https://www.lullabot.com/articles/what-heck-aria-beginners-guide-aria-accessibility",
+              "href": "https://www.freecodecamp.org/news/designing-keyboard-accessibility-for-complex-react-experiences/",
               "target": "_blank",
               "rel": "noopener",
-              "aria-label": "A beginners guide to ARIA and how to use it",
-              "text": "A beginners guide to ARIA and how to use it"
+              "aria-label": "An article about how to design for keywith accessibility in React",
+              "text": "A good article about how to design for keyboard accessibility in React"
             }
           ]
         },
@@ -285,11 +134,11 @@
           "link": [
             {
               "type": "a",
-              "href": "https://web.dev/articles/semantics-aria",
+              "href": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_accessibility",
               "target": "_blank",
               "rel": "noopener",
-              "aria-label": "A short article explaining ARIA for developers",
-              "text": "A short article explaining ARIA for developers"
+              "aria-label": "Tips and trick regarding focus management",
+              "text": "Tips and trick regarding focus management"
             }
           ]
         },
@@ -297,11 +146,11 @@
           "link": [
             {
               "type": "a",
-              "href": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques",
+              "href": "https://dev.to/eevajonnapanula/keyboard-accessible-tabs-with-react-5ch4",
               "target": "_blank",
               "rel": "noopener",
-              "aria-label": "A list of implementable ARIA-techniques that can be applied to HTML elements",
-              "text": "A list of implementable ARIA-techniques that can be applied to HTML elements"
+              "aria-label": "A developer talks about how to design a tablist that uses keyboard navigation",
+              "text": "A developer talks about how to design a tablist that uses keyboard navigation"
             }
           ]
         },
@@ -309,35 +158,11 @@
           "link": [
             {
               "type": "a",
-              "href": "https://accessibilityinsights.io/info-examples/web/",
+              "href": "https://uxdesign.cc/taking-the-keyboard-navigation-red-pill-dbb76dd73b1e",
               "target": "_blank",
               "rel": "noopener",
-              "aria-label": "A list of examples to increase accessibility for webpages",
-              "text": "A list of examples to increase accessibility for webpages"
-            }
-          ]
-        },
-        {
-          "link": [
-            {
-              "type": "a",
-              "href": "https://thepaciellogroup.github.io/AT-browser-tests/",
-              "target": "_blank",
-              "rel": "noopener",
-              "aria-label": "A collection of 130 HTML-elements that have been tested for accessibility",
-              "text": "A collection of 130 HTML-elements that have been tested for accessibility"
-            }
-          ]
-        },
-        {
-          "link": [
-            {
-              "type": "a",
-              "href": "https://uxdesign.cc/a-three-layered-approach-to-accessibility-design-b6894fa15fd1",
-              "target": "_blank",
-              "rel": "noopener",
-              "aria-label": "How you should think when designing a webpage with accessibility built into it",
-              "text": "Insights into how you should think when designing a webpage with accessibility built into it"
+              "aria-label": "An article about the no-mouse challenge and what you can learn from it",
+              "text": "An article about the no-mouse challenge and what you can learn from it"
             }
           ]
         }
