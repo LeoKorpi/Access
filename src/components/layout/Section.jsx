@@ -22,15 +22,15 @@ export default function Section({ section }) {
     <Box
       sx={{
         backgroundColor: theme.palette.primary.main,
-        mb: theme.spacing("body1"),
+        mb: theme.typography.spacing("body1"),
       }}
     >
       <Typography
         variant={heading}
         sx={{
-          mb: theme.spacing("h1"),
-          letterSpacing: theme.letterSpacing("h1"),
-          wordSpacing: theme.wordSpacing("h1"),
+          mb: theme.typography.spacing(`${heading}`),
+          letterSpacing: theme.typography.letterSpacing(`${heading}`),
+          wordSpacing: theme.typography.wordSpacing(`${heading}`),
         }}
       >
         {title}
@@ -39,9 +39,9 @@ export default function Section({ section }) {
         <Typography
           variant="body1"
           sx={{
-            mb: theme.spacing("body1"),
-            letterSpacing: theme.letterSpacing("body1"),
-            wordSpacing: theme.wordSpacing("body1"),
+            mb: theme.typography.spacing("body1"),
+            letterSpacing: theme.typography.letterSpacing("body1"),
+            wordSpacing: theme.typography.wordSpacing("body1"),
           }}
         >
           <InlineContent content={content} />

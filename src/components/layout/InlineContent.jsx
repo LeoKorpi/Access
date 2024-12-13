@@ -1,4 +1,8 @@
+import { Link } from "@mui/material";
+import { useTheme } from "@mui/material";
+
 export default function InlineContent({ content }) {
+  const theme = useTheme();
   return content.map((item, index) => {
     if (typeof item === "string") {
       return <span key={index}>{item}</span>;
@@ -19,7 +23,12 @@ export default function InlineContent({ content }) {
     }
     if (item.type === "a") {
       return (
-        <a
+        <Link
+          sx={{
+            color: theme.palette.primary.link,
+            fontWeight: 600,
+          }}
+          underline="hover"
           key={index}
           href={item.href}
           target={item.target || "_blank"}
@@ -27,7 +36,7 @@ export default function InlineContent({ content }) {
           aria-label={item["aria-label"] || "undefined"}
         >
           {item.text}
-        </a>
+        </Link>
       );
     }
     if (item.type === "abbr") {

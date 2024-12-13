@@ -1,6 +1,7 @@
 import NestedList from "./NestedList";
 import InlineContent from "./InlineContent";
 import { Typography } from "@mui/material";
+import { useTheme } from "@mui/material";
 
 export default function List({
   items,
@@ -9,6 +10,7 @@ export default function List({
   type = "unordered",
 }) {
   const ListTag = type === "ordered" ? "ol" : "ul";
+  const theme = useTheme();
 
   return (
     <>
@@ -47,7 +49,14 @@ export default function List({
         })}
       </ListTag>
       {paragraphAfter && (
-        <Typography variant="body1">
+        <Typography
+          variant="body1"
+          sx={{
+            mb: theme.typography.spacing("body1"),
+            letterSpacing: theme.typography.letterSpacing("body1"),
+            wordSpacing: theme.typography.wordSpacing("body1"),
+          }}
+        >
           <InlineContent content={paragraphAfter.text} />
         </Typography>
       )}
