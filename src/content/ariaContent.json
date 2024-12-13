@@ -203,13 +203,13 @@
         "Before: ",
         {
           "type": "code",
-          "text": "div class=\"alert-message\">Error: Login not found.</div"
+          "text": "div class=\"alert-message\"> Error: Login not found. </div"
         },
         { "type": "br" },
         "After: ",
         {
           "type": "code",
-          "text": "div class=\"alert-message\" role=\"alert\">Login Successful!</div"
+          "text": "div class=\"alert-message\" role=\"alert\"> Login Successful! </div"
         }
       ]
     },
@@ -224,7 +224,7 @@
         { "type": "br" },
         {
           "type": "formatted-text",
-          "text": "<ul id=\"nav-menu-list\"role=\"menu\">\n  <li role=\"none\">\n    <a role=\"menuitem\"href=\"...\">Link 1 </a>\n  </li>\n  <li role=\"none\">\n    <a role=\"menuitem\"href=\"...\">Link 2 </a>\n  </li>\n  <li role=\"none\">\n    <a role=\"menuitem\"href=\"...\">Link 3 </a>\n  </li>\n</ul>"
+          "text": "<ul id=\"nav-menu-list\"role=\"menu\">\n  <li role=\"none\">\n    <a role=\"menuitem\" href=\"...\"> Link 1 </a>\n  </li>\n  <li role=\"none\">\n    <a role=\"menuitem\" href=\"...\"> Link 2 </a>\n  </li>\n  <li role=\"none\">\n    <a role=\"menuitem\" href=\"...\"> Link 3 </a>\n  </li>\n</ul>"
         }
       ]
     },
@@ -239,7 +239,7 @@
         { "type": "br" },
         {
           "type": "formatted-text",
-          "text": "<label for=\"first-name\">First name</label>\n<input type=\"text\" id=\"first-name\" aria-required=\"true\" autocomplete=\"on\"/>"
+          "text": "<label for=\"first-name\"> First name </label>\n<input type=\"text\" id=\"first-name\" aria-required=\"true\" autocomplete=\"on\"/>"
         }
       ]
     },
@@ -248,12 +248,12 @@
       "type": "section",
       "title": "Lessons learned",
       "content": [
-        "My best tips for developing with ARIA is to start early and test lots. By navigating with only your keyboard and using a screen reader (by utilizing an extension for your browser) you'll quickly notice how your text is read. This will give you insights to, for example, if you've missed wrapping an abbreviation in a ",
+        "My best tips for developing with ARIA is to start early and test lots. By navigating with only your keyboard and using a screen reader (by utilizing an extension for your browser) you'll quickly notice how your text is read. This will give you tons of insights into how users with vision disabilites process information of your website. Some things I have learned are for example are missing to wrap an abbreviation in a ",
         {
           "type": "code",
           "text": "abbr"
         },
-        " tag and given it a aria-label, how lists are read with screen readers, that widgets are given roles and many more. Oftentimes these things can be missed by lighthouse reports, so ",
+        " tag and give it a aria-label, how lists are read with screen readers, that widgets are given roles and many more. Oftentimes these things can be missed by lighthouse reports, so ",
         {
           "type": "span",
           "className": "text-bold",
