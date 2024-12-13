@@ -13,7 +13,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { useEffect, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { navHeadings } from "../content/nav_headings";
+import { navHeadings } from "../content/navHeadings";
 import AccessibilityWidget from "../utils/AccessibilityWidget";
 
 // "writer", returns the url to be redirected to
