@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import Links from "../../components/layout/Links";
-import content from "../../content/ariaContent.json";
+import breadcrumbs from "../../links/breadcrumbs.json";
 import ariaLinks from "../../links/ariaLinks.json";
 
 export default function Aria() {
@@ -35,7 +35,7 @@ export default function Aria() {
 
   const renderBreadCrumbs = () => (
     <Breadcrumbs aria-label="breadcrumb">
-      {content.breadcrumb.map((crumb, index) =>
+      {breadcrumbs.aria.map((crumb, index) =>
         crumb.link ? (
           <Link key={index} underline="hover" color="inherit" href={crumb.link}>
             {crumb.label}

@@ -1,0 +1,22 @@
+{
+  "aria": [
+    { "label": "Home", "link": "/" },
+    { "label": "ARIA", "link": null }
+  ],
+  "keyboard": [
+    { "label": "Home", "link": "/" },
+    { "label": "keyboard", "link": null }
+  ],
+  "screenReaders": [
+    { "label": "Home", "link": "/" },
+    { "label": "Screen Readers", "link": null }
+  ],
+  "color": [
+    { "label": "Home", "link": "/" },
+    { "label": "Color Blindness", "link": null }
+  ],
+  "fonts": [
+    { "label": "Home", "link": "/" },
+    { "label": "fonts", "link": null }
+  ]
+}
