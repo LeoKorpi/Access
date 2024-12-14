@@ -1,10 +1,15 @@
+import {
+  Box,
+  Breadcrumbs,
+  Link,
+  List,
+  ListItem,
+  Typography,
+} from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { Breadcrumbs, Link, Typography } from "@mui/material";
 import Links from "../../components/layout/Links";
 import content from "../../content/ariaContent.json";
 import ariaLinks from "../../links/ariaLinks.json";
-import { List } from "@mui/material";
-import { ListItem } from "@mui/material";
 
 export default function Aria() {
   const theme = useTheme();
@@ -49,7 +54,7 @@ export default function Aria() {
       {renderBreadCrumbs()}
 
       {/*h1 ARIA Roles and Attributes*/}
-      <section>
+      <Box component="section" sx={{ maxWidth: 800 }}>
         <Typography
           variant="h1"
           sx={{
@@ -77,10 +82,10 @@ export default function Aria() {
           Below we'll dive deeper into what ARIA is, when to, and when to not
           use it.
         </Typography>
-      </section>
+      </Box>
 
       {/*What is ARIA?*/}
-      <section>
+      <Box component="section" sx={{ maxWidth: 800 }}>
         <Typography
           variant="h2"
           sx={{
@@ -136,10 +141,10 @@ export default function Aria() {
           </Link>
           .
         </Typography>
-      </section>
+      </Box>
 
       {/*How can I use ARIA?*/}
-      <section>
+      <Box component="section" sx={{ maxWidth: 800 }}>
         <Typography
           variant="h2"
           sx={{
@@ -247,10 +252,10 @@ export default function Aria() {
           </Link>
           .
         </Typography>
-      </section>
+      </Box>
 
       {/*When should I not use ARIA?*/}
-      <section>
+      <Box component="section" sx={{ maxWidth: 800 }}>
         <Typography
           variant="h2"
           sx={{
@@ -321,10 +326,10 @@ export default function Aria() {
             All interactive elements must have an accessible name.
           </ListItem>
         </List>
-      </section>
+      </Box>
 
       {/*So when can I use ARIA?*/}
-      <section>
+      <Box component="section" sx={{ maxWidth: 800 }}>
         <Typography
           variant="h2"
           sx={{
@@ -507,10 +512,10 @@ export default function Aria() {
           in addition to being checked or unchecked. The aria equivalent to this
           is <code>aria-checked="mixed"</code>.
         </Typography>
-      </section>
+      </Box>
 
       {/*Lessons learned*/}
-      <section>
+      <Box component="section" sx={{ maxWidth: 800 }}>
         <Typography
           variant="h2"
           sx={{
@@ -541,10 +546,10 @@ export default function Aria() {
           lighthouse reports, so{" "}
           <span className="text-bold">don't forget to test manually!</span>
         </Typography>
-      </section>
+      </Box>
 
       {/*Useful links*/}
-      <section>
+      <Box component="section" sx={{ maxWidth: 800 }}>
         <Typography
           variant="h2"
           sx={{
@@ -556,7 +561,7 @@ export default function Aria() {
           Useful links
         </Typography>
         <Links links={ariaLinks}></Links>
-      </section>
+      </Box>
     </>
   );
 }
