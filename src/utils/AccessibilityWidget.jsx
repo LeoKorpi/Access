@@ -10,10 +10,10 @@ export default function AccessibilityWidget() {
       sx={{
         display: "inline-block",
         position: "sticky",
-        borderRadius: "3rem",
+        borderRadius: "50%",
         bottom: 0,
         left: 1000,
-        backgroundColor: theme.palette.secondary.main,
+        backgroundColor: theme.palette.primary.secondary,
       }}
     >
       <IconButton color="primary" size="medium">
