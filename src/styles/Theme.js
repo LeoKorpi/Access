@@ -27,9 +27,9 @@ let theme = createTheme({
 
     spacing: (variant) => {
       const fontSizeMap = {
-        h1: baseFontSize * 0.15,
-        h2: baseFontSize * 0.125,
-        h3: baseFontSize,
+        h1: baseFontSize * 0.25,
+        h2: baseFontSize * 0.15,
+        h3: baseFontSize * 0.125,
         body1: baseFontSize,
       };
 
