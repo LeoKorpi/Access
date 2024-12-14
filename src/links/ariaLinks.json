@@ -1,0 +1,32 @@
+[
+  {
+    "href": "https://www.lullabot.com/articles/what-heck-aria-beginners-guide-aria-accessibility",
+    "aria-label": "A beginners guide to ARIA and how to use it",
+    "text": "A beginners guide to ARIA and how to use it"
+  },
+  {
+    "href": "https://web.dev/articles/semantics-aria",
+    "aria-label": "A short article explaining ARIA for developers",
+    "text": "A short article explaining ARIA for developers"
+  },
+  {
+    "href": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques",
+    "aria-label": "A list of implementable ARIA-techniques that can be applied to HTML elements",
+    "text": "A list of implementable ARIA-techniques that can be applied to HTML elements"
+  },
+  {
+    "href": "https://accessibilityinsights.io/info-examples/web/",
+    "aria-label": "A list of examples to increase accessibility for webpages",
+    "text": "A list of examples to increase accessibility for webpages"
+  },
+  {
+    "href": "https://thepaciellogroup.github.io/AT-browser-tests/",
+    "aria-label": "A collection of 130 HTML-elements that have been tested for accessibility",
+    "text": "A collection of 130 HTML-elements that have been tested for accessibility"
+  },
+  {
+    "href": "https://uxdesign.cc/a-three-layered-approach-to-accessibility-design-b6894fa15fd1",
+    "aria-label": "How you should think when designing a webpage with accessibility built into it",
+    "text": "Insights into how you should think when designing a webpage with accessibility built into it"
+  }
+]

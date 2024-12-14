@@ -161,7 +161,7 @@ export default function Root() {
       )}
 
       <Box
-        component="section"
+        component="article"
         className="main-content"
         sx={{
           flexGrow: 1,
