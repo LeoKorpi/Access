@@ -1,0 +1,22 @@
+[
+  {
+    "href": "https://www.accessibilitychecking.com/blog/fonts-accessibility/",
+    "aria-label": "A pretty thorough article about fonts and specifically what makes text accessible",
+    "text": "A pretty thorough article about fonts and specifically what makes text accessible"
+  },
+  {
+    "href": "https://medium.com/airbnb-engineering/rethinking-text-resizing-on-web-1047b12d2881",
+    "aria-label": "An article written by one of the developers of Airbnb and how they think about font-scaling for their business",
+    "text": "An article written by one of the developers of Airbnb and how they think about font-scaling for their business"
+  },
+  {
+    "href": "https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/",
+    "aria-label": "A deep dive on why we should use both rem and percentage if we want our text to be accessible",
+    "text": "A deep dive on why we should use both rem and percentage if we want our text to be accessible"
+  },
+  {
+    "href": "https://dev.to/marcelluscaio/using-rem-doesnt-make-your-website-responsive-heres-why-4b0e",
+    "aria-label": "An interesting read about using media queries for fonts (but most of this could have been solved with clamp...)",
+    "text": "An interesting read about using media queries for fonts (but most of this could have been solved with clamp...)"
+  }
+]

@@ -9,10 +9,10 @@
   ],
   "color": [
     { "label": "Home", "link": "/" },
-    { "label": "Color Blindness", "link": null }
+    { "label": "Colors", "link": null }
   ],
-  "font": [
+  "text": [
     { "label": "Home", "link": "/" },
-    { "label": "Fonts", "link": null }
+    { "label": "Text", "link": null }
   ]
 }

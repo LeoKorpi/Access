@@ -26,6 +26,6 @@
     "primary": "Optimization for screen readers (ARIA)",
     "path": "/screenreaders"
   },
-  { "primary": "Color blindness", "path": "/colorblindness" },
-  { "primary": "Fonts", "path": "/font" }
+  { "primary": "Colors", "path": "/colors" },
+  { "primary": "Text and Accessibility", "path": "/text" }
 ]

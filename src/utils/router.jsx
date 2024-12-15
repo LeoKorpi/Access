@@ -6,7 +6,7 @@ import {
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Colors from "../pages/Learning/Colors";
-import Font from "../pages/Learning/Font";
+import Text from "../pages/Learning/Text";
 import Keyboard from "../pages/Learning/Keyboard";
 import Operable from "../pages/Learning/Operable";
 import Perceivable from "../pages/Learning/Perceivable";
@@ -38,8 +38,8 @@ const router = createBrowserRouter(
       <Route path="wcag-guidelines/robust" element={<Robust />} />
       <Route path="keyboard" element={<Keyboard />} />
       <Route path="screenreaders" element={<ScreenReaders />} />
-      <Route path="colorblindness" element={<Colors />} />
-      <Route path="font" element={<Font />} />
+      <Route path="colors" element={<Colors />} />
+      <Route path="text" element={<Text />} />
     </Route>
   ),
   {
