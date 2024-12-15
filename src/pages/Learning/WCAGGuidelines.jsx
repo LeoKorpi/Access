@@ -17,6 +17,11 @@ export default function WCAGGuidelines() {
         <Typography sx={{ color: "text.primary" }}>WCAG</Typography>
       </Breadcrumbs>
       <h1>This page is for the WCAG guidelines</h1>
+      The Web Content Accessibility Guidelines (WCAG) goal is to provide a
+      single shared standard for web content accessibility that meets the needs
+      of individuals, organizations, and governments internationally. To do this
+      The WCAG documents explain how to make web content more accessible to
+      people with disabilities.
     </Box>
   );
 }
