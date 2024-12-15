@@ -1,11 +1,5 @@
-import { ExpandLess, ExpandMore, StarBorder } from "@mui/icons-material";
-import {
-  Box,
-  List,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
+import { Box, List, ListItemButton, ListItemText } from "@mui/material";
 import Collapse from "@mui/material/Collapse";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -46,11 +40,10 @@ export default function NavigationList({ isMobile }) {
                   toggleDrawer();
                 }
               }}
-              sx={location.pathname === item.path ? activeStyle : {}}
+              sx={
+                (location.pathname === item.path ? activeStyle : {}, { pl: 3 })
+              }
             >
-              <ListItemIcon>
-                <StarBorder />
-              </ListItemIcon>
               <ListItemText primary={item.primary} />
               {item.secondary ? (
                 openStates[index] ? (
@@ -80,9 +73,6 @@ export default function NavigationList({ isMobile }) {
                         }
                       }}
                     >
-                      <ListItemIcon>
-                        <StarBorder />
-                      </ListItemIcon>
                       <ListItemText primary={subItem.primary} />
                     </ListItemButton>
                   ))}
