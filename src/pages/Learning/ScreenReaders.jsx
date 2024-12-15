@@ -9,7 +9,7 @@ import {
 import { useTheme } from "@mui/material/styles";
 import Links from "../../components/Links";
 import breadcrumbs from "../../links/breadcrumbs.json";
-import ariaLinks from "../../links/ariaLinks.json";
+import screenReaderLinks from "../../links/screenReaderLinks.json";
 
 export default function Aria() {
   const theme = useTheme();
@@ -566,7 +566,7 @@ export default function Aria() {
         >
           Useful links
         </Typography>
-        <Links links={ariaLinks}></Links>
+        <Links links={screenReaderLinks}></Links>
       </Box>
     </>
   );
