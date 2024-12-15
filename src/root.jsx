@@ -3,10 +3,11 @@ import { useMediaQuery } from "@mui/material";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import NavigationList from "./components/NavigationList";
 import AccessibilityWidget from "./utils/AccessibilityWidget";
+import SkipToContent from "./components/SkipToContent";
 
 // "writer", returns the url to be redirected to
 export async function action() {
@@ -21,6 +22,7 @@ export default function Root() {
   const isMobile = useMediaQuery("(max-width:430px)"); //justera efter minsta önskade bredd på mobilupplösning
   const location = useLocation();
   const pathName = location.pathname.slice(1); //slice för att ta bort'\' i början
+  const mainContentRef = useRef(null);
 
   const toggleDrawer = () => {
     setDrawerState(!drawerState);
@@ -42,6 +44,7 @@ export default function Root() {
         flexShrink: 0,
       }}
     >
+      <SkipToContent mainContentRef={mainContentRef} />
       {isMobile ? (
         <>
           <IconButton onClick={toggleDrawer}>
@@ -73,6 +76,9 @@ export default function Root() {
       <Box
         component="article"
         className="main-content"
+        id="main-content"
+        ref={mainContentRef}
+        tabIndex={-1}
         sx={{
           flexGrow: 1,
           p: 3,
