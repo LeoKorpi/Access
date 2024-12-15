@@ -3,7 +3,7 @@ import IconButton from "@mui/material/IconButton";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import Box from "@mui/material/Box";
 
-export default function AccessibilityWidget() {
+export default function AccessibilityWidget({ isMobile }) {
   const theme = useTheme();
   return (
     <Box
@@ -12,7 +12,7 @@ export default function AccessibilityWidget() {
         position: "sticky",
         borderRadius: "50%",
         bottom: 0,
-        left: 99999,
+        left: isMobile ? "90%" : 99999,
         backgroundColor: theme.palette.primary.secondary,
       }}
     >

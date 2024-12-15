@@ -86,7 +86,7 @@ export default function Root() {
         }}
       >
         <Outlet />
-        <AccessibilityWidget />
+        <AccessibilityWidget isMobile={isMobile} />
       </Box>
     </Box>
   );
