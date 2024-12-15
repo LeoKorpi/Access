@@ -1,0 +1,22 @@
+[
+  {
+    "href": "https://www.freecodecamp.org/news/designing-keyboard-accessibility-for-complex-react-experiences/",
+    "aria-label": "An article about how to design for keywith accessibility in React",
+    "text": "A good article about how to design for keyboard accessibility in React"
+  },
+  {
+    "href": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_accessibility",
+    "aria-label": "Tips and trick regarding focus management",
+    "text": "Tips and trick regarding focus management"
+  },
+  {
+    "href": "https://dev.to/eevajonnapanula/keyboard-accessible-tabs-with-react-5ch4",
+    "aria-label": "A developer talks about how to design a tablist that uses keyboard navigation",
+    "text": "A developer talks about how to design a tablist that uses keyboard navigation"
+  },
+  {
+    "href": "https://uxdesign.cc/taking-the-keyboard-navigation-red-pill-dbb76dd73b1e",
+    "aria-label": "An article about the no-mouse challenge and what you can learn from it",
+    "text": "An article about the no-mouse challenge and what you can learn from it"
+  }
+]
