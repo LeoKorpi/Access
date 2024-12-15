@@ -1,0 +1,27 @@
+[
+  {
+    "href": "https://chromewebstore.google.com/detail/a11y-color-blindness-empa/idphhflanmeibmjgaciaadkmjebljhcc",
+    "aria-label": "The best plugin to check how you website would look to people with different types of color blindness",
+    "text": "The best plugin to check how you website would look to people with different types of color blindness"
+  },
+  {
+    "href": "https://blog.cloudflare.com/thinking-about-color/",
+    "aria-label": "The definite article about usage of colors on a website",
+    "text": "The definite article about usage of colors on a website"
+  },
+  {
+    "href": "https://contrastchecker.com/",
+    "aria-label": "A simple contrast checker",
+    "text": "A simple contrast checker"
+  },
+  {
+    "href": "https://www.aremycolorsaccessible.com/palette",
+    "aria-label": "Cool website for checking the contrast ratio for your colors",
+    "text": "Cool website for checking the contrast ratio for your colors"
+  },
+  {
+    "href": "https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23F2F2F2%0D%0A%23DDDDDD%0D%0A%23CCCCCC%0D%0A%23888888%0D%0A%23404040%2C%20Charcoal%0D%0A%23000000%2C%20Black%0D%0A%232F78C5%2C%20Effective%20on%20Extremes%0D%0A%230F60B6%2C%20Effective%20on%20Lights%0D%0A%23398EEA%2C%20Ineffective%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp",
+    "aria-label": "A website featuring a grid with colors from a user input. The colors which contrast ratio are not high enough and those which pass are highlighted",
+    "text": "Similar to the previous link, but I prefer using this one"
+  }
+]
