@@ -1,11 +1,10 @@
 import { Breadcrumbs, Link, Typography } from "@mui/material";
-import content from "../../content/fontContent.json";
-import Section from "../../components/layout/Section";
+import breadcrumbs from "../../links/breadcrumbs.json";
 
 export default function Font() {
   const renderBreadCrumbs = () => (
     <Breadcrumbs aria-label="breadcrumb">
-      {content.breadcrumb.map((crumb, index) =>
+      {breadcrumbs.font.map((crumb, index) =>
         crumb.link ? (
           <Link key={index} underline="hover" color="inherit" href={crumb.link}>
             {crumb.label}
@@ -19,12 +18,5 @@ export default function Font() {
     </Breadcrumbs>
   );
 
-  return (
-    <>
-      {renderBreadCrumbs()}
-      {content.sections.map((section, index) => (
-        <Section key={index} section={section} />
-      ))}
-    </>
-  );
+  return <>{renderBreadCrumbs()}</>;
 }

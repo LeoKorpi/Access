@@ -5,7 +5,7 @@
   ],
   "keyboard": [
     { "label": "Home", "link": "/" },
-    { "label": "keyboard", "link": null }
+    { "label": "Keyboard", "link": null }
   ],
   "screenReaders": [
     { "label": "Home", "link": "/" },
@@ -15,8 +15,8 @@
     { "label": "Home", "link": "/" },
     { "label": "Color Blindness", "link": null }
   ],
-  "fonts": [
+  "font": [
     { "label": "Home", "link": "/" },
-    { "label": "fonts", "link": null }
+    { "label": "Fonts", "link": null }
   ]
 }
