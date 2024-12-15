@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
-import Aria from "../pages/Learning/Aria";
 import Colors from "../pages/Learning/Colors";
 import Font from "../pages/Learning/Font";
 import Keyboard from "../pages/Learning/Keyboard";
@@ -37,8 +36,6 @@ const router = createBrowserRouter(
         element={<Understandable />}
       />
       <Route path="wcag-guidelines/robust" element={<Robust />} />
-
-      <Route path="aria" element={<Aria />} />
       <Route path="keyboard" element={<Keyboard />} />
       <Route path="screenreaders" element={<ScreenReaders />} />
       <Route path="colorblindness" element={<Colors />} />

@@ -21,9 +21,11 @@
       }
     ]
   },
-  { "primary": "ARIA Roles and attributes", "path": "/aria" },
   { "primary": "Keyboard navigation", "path": "/keyboard" },
-  { "primary": "Optimization for screen readers", "path": "/screenreaders" },
+  {
+    "primary": "Optimization for screen readers (ARIA)",
+    "path": "/screenreaders"
+  },
   { "primary": "Color blindness", "path": "/colorblindness" },
   { "primary": "Fonts", "path": "/font" }
 ]

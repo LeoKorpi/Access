@@ -1,8 +1,4 @@
 {
-  "aria": [
-    { "label": "Home", "link": "/" },
-    { "label": "ARIA", "link": null }
-  ],
   "keyboard": [
     { "label": "Home", "link": "/" },
     { "label": "Keyboard", "link": null }
