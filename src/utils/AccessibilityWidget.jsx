@@ -16,7 +16,18 @@ export default function AccessibilityWidget() {
         backgroundColor: theme.palette.primary.secondary,
       }}
     >
-      <IconButton color="primary" size="medium">
+      <IconButton
+        sx={{
+          ":focus-visible": {
+            outline: "4px solid rgb(200, 20, 20)",
+            outlineOffset: "2px",
+          },
+        }}
+        color="primary"
+        size="medium"
+        aria-label="Open the accessibility widget"
+        title="Open the accessibility widget"
+      >
         <AccessibilityNewIcon fontSize="inherit" />
       </IconButton>
     </Box>
