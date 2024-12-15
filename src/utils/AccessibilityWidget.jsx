@@ -12,7 +12,7 @@ export default function AccessibilityWidget() {
         position: "sticky",
         borderRadius: "50%",
         bottom: 0,
-        left: 1000,
+        left: 99999,
         backgroundColor: theme.palette.primary.secondary,
       }}
     >
