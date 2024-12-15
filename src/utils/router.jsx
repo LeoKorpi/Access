@@ -7,15 +7,15 @@ import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Aria from "../pages/Learning/Aria";
 import Colors from "../pages/Learning/Colors";
-import Keyboard from "../pages/Learning/Keyboard";
-import ScreenReaders from "../pages/Learning/ScreenReaders";
 import Font from "../pages/Learning/Font";
-import Operable from "../pages/Learning/wcag_principles/Operable";
-import Perceivable from "../pages/Learning/wcag_principles/Perceivable";
-import Robust from "../pages/Learning/wcag_principles/Robust";
-import Understandable from "../pages/Learning/wcag_principles/Understandable";
+import Keyboard from "../pages/Learning/Keyboard";
+import Operable from "../pages/Learning/Operable";
+import Perceivable from "../pages/Learning/Perceivable";
+import Robust from "../pages/Learning/Robust";
+import ScreenReaders from "../pages/Learning/ScreenReaders";
+import Understandable from "../pages/Learning/Understandable";
 import WCAGGuidelines from "../pages/Learning/WCAGGuidelines";
-import Root from "../routes/root";
+import Root from "../root";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

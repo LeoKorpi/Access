@@ -9,7 +9,7 @@ import {
 import Collapse from "@mui/material/Collapse";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import navHeadings from "../../links/navHeadings.json";
+import navHeadings from "../links/navHeadings.json";
 
 export default function NavigationList({ isMobile }) {
   const [openStates, setOpenStates] = useState(navHeadings.map(() => false));

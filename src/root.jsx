@@ -5,8 +5,8 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import AccessibilityWidget from "../utils/AccessibilityWidget";
-import NavigationList from "../components/layout/NavigationList";
+import NavigationList from "./components/NavigationList";
+import AccessibilityWidget from "./utils/AccessibilityWidget";
 
 // "writer", returns the url to be redirected to
 export async function action() {

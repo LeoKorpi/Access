@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import Links from "../../components/layout/Links";
+import Links from "../../components/Links";
 import breadcrumbs from "../../links/breadcrumbs.json";
 import ariaLinks from "../../links/ariaLinks.json";
 
@@ -32,6 +32,7 @@ export default function Aria() {
   aria-labelledby="chk15-label"></span>
 <label id="chk15-label">Subscribe to the newsletter</label>`;
   const halfSpacing = 2;
+  const maxWidth = 800;
 
   const renderBreadCrumbs = () => (
     <Breadcrumbs aria-label="breadcrumb">
@@ -54,7 +55,7 @@ export default function Aria() {
       {renderBreadCrumbs()}
 
       {/*h1 ARIA Roles and Attributes*/}
-      <Box component="section" sx={{ maxWidth: 800 }}>
+      <Box component="section" sx={{ maxWidth: maxWidth }}>
         <Typography
           variant="h1"
           sx={{
@@ -85,7 +86,7 @@ export default function Aria() {
       </Box>
 
       {/*What is ARIA?*/}
-      <Box component="section" sx={{ maxWidth: 800 }}>
+      <Box component="section" sx={{ maxWidth: maxWidth }}>
         <Typography
           variant="h2"
           sx={{
@@ -144,7 +145,7 @@ export default function Aria() {
       </Box>
 
       {/*How can I use ARIA?*/}
-      <Box component="section" sx={{ maxWidth: 800 }}>
+      <Box component="section" sx={{ maxWidth: maxWidth }}>
         <Typography
           variant="h2"
           sx={{
@@ -255,7 +256,7 @@ export default function Aria() {
       </Box>
 
       {/*When should I not use ARIA?*/}
-      <Box component="section" sx={{ maxWidth: 800 }}>
+      <Box component="section" sx={{ maxWidth: maxWidth }}>
         <Typography
           variant="h2"
           sx={{
@@ -329,7 +330,7 @@ export default function Aria() {
       </Box>
 
       {/*So when can I use ARIA?*/}
-      <Box component="section" sx={{ maxWidth: 800 }}>
+      <Box component="section" sx={{ maxWidth: maxWidth }}>
         <Typography
           variant="h2"
           sx={{
@@ -515,7 +516,7 @@ export default function Aria() {
       </Box>
 
       {/*Lessons learned*/}
-      <Box component="section" sx={{ maxWidth: 800 }}>
+      <Box component="section" sx={{ maxWidth: maxWidth }}>
         <Typography
           variant="h2"
           sx={{
@@ -549,7 +550,7 @@ export default function Aria() {
       </Box>
 
       {/*Useful links*/}
-      <Box component="section" sx={{ maxWidth: 800 }}>
+      <Box component="section" sx={{ maxWidth: maxWidth }}>
         <Typography
           variant="h2"
           sx={{
