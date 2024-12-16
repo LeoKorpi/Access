@@ -6,25 +6,19 @@ import {
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Colors from "../pages/Learning/Colors";
-import Text from "../pages/Learning/Text";
 import Keyboard from "../pages/Learning/Keyboard";
 import Operable from "../pages/Learning/Operable";
 import Perceivable from "../pages/Learning/Perceivable";
 import Robust from "../pages/Learning/Robust";
 import ScreenReaders from "../pages/Learning/ScreenReaders";
+import Text from "../pages/Learning/Text";
 import Understandable from "../pages/Learning/Understandable";
 import WCAGGuidelines from "../pages/Learning/WCAGGuidelines";
 import Root from "../root";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route
-      path="/"
-      element={<Root />}
-      // loader={rootLoader}
-      // action={rootAction}
-      errorElement={<ErrorPage />}
-    >
+    <Route path="/" element={<Root />} errorElement={<ErrorPage />}>
       <Route errorElement={<ErrorPage />} />
       <Route index element={<Home />} />
       <Route path="wcag-guidelines" element={<WCAGGuidelines />} />

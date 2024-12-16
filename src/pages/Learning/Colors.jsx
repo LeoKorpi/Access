@@ -28,7 +28,8 @@ export default function Colors() {
   return (
     <>
       {renderBreadCrumbs()}
-      {/*h1 ARIA Roles and Attributes*/}
+
+      {/*h1 Colors */}
       <Box component="section" sx={{ maxWidth: maxWidth }}>
         <Typography
           variant="h1"

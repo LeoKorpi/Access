@@ -1,16 +1,10 @@
-import {
-  Box,
-  Breadcrumbs,
-  Link,
-  List,
-  ListItem,
-  Typography,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 export default function Home() {
   const theme = useTheme();
   const maxWidth = 800;
+
   return (
     <Box component="section" sx={{ maxWidth: maxWidth, p: 3 }}>
       <Typography

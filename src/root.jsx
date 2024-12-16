@@ -9,14 +9,6 @@ import NavigationList from "./components/NavigationList";
 import AccessibilityWidget from "./utils/AccessibilityWidget";
 import SkipToContent from "./components/SkipToContent";
 
-// "writer", returns the url to be redirected to
-export async function action() {
-  //hämta nästa artikel man ska navigera till?
-}
-
-// "reader", provides data to the route element before it renders
-export async function loader() {}
-
 export default function Root() {
   const [drawerState, setDrawerState] = useState(false);
   const isMobile = useMediaQuery("(max-width:430px)"); //justera efter minsta önskade bredd på mobilupplösning
@@ -30,7 +22,7 @@ export default function Root() {
 
   //Makes the page scroll to the top when the section-component is reloaded (visiting new page)
   useEffect(() => {
-    const container = document.querySelector(".main-content");
+    const container = document.querySelector("#main-content");
     container.scrollTo(0, 0);
   }, [pathName]);
 
@@ -75,7 +67,6 @@ export default function Root() {
 
       <Box
         component="article"
-        className="main-content"
         id="main-content"
         ref={mainContentRef}
         tabIndex={-1}
